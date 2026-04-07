@@ -10,7 +10,18 @@ Este proyecto es una página web para una pastelería que permite:
 # Para realizar la demostración:
 Usuario:  Ale
 
-Conatraseña: 200611
+Contraseña: 200611
+
+
+# Archivos del proyecto
+- `index.php` → Página principal con el formulario de login.
+- `login.php` → Verifica usuario y contraseña.
+- `home.php` → Página principal después del login, con formulario para ingresar datos y tabla de registros.
+- `guardar.php` → Procesa el ingreso de nuevos datos.
+- `conexion.php` → Conexión a la base de datos MySQL.
+- `estilos.css` → Estilos personalizados de mi pagina web.
+- `pasteleria_control.sql` → Archivo de la base de datos para importar.
+
 
 # Preguntas y Respuestas
 
