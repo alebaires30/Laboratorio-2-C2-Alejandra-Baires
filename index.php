@@ -24,6 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <link rel="stylesheet" href="estilos.css">
 
 <h1>Login</h1>
+<h2>Registro de Usuarios - Pastelería Baires</h2>
 <?php if(isset($error)) echo "<p style='color:red;'>$error</p>"; ?>
 <form method="POST">
     Usuario: <input type="text" name="usuario" required><br>

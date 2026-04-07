@@ -7,8 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = trim($_POST["nombre"]);
     $edad = $_POST["edad"];
     $email = trim($_POST["email"]);
-
-    // Validaciones
+    
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) die("Email inválido");
     if (!is_numeric($edad) || $edad <= 0) die("Edad inválida");
 
