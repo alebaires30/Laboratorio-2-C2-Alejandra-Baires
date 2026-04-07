@@ -48,22 +48,21 @@ Además, permiten que varios usuarios accedan y modifiquen la información al mi
 
 # 4.Describa brevemente sus tablas y los tipos de datos utilizados en cada campo; justifique la elección del tipo de dato para cada uno.
 
-# Tabla `usuarios`
+#### **Tabla `usuarios`**
+| Campo     | Tipo         | Justificación |
+|-----------|-------------|---------------|
+| `id`      | INT AUTO_INCREMENT PRIMARY KEY | Es un número único que identifica cada usuario automáticamente; garantiza que no haya duplicados y facilita búsquedas rápidas. |
+| `usuario` | VARCHAR(50)  | Almacena nombres de usuario alfanuméricos. Se eligió VARCHAR porque los nombres pueden variar en longitud, y 50 caracteres es suficiente para cualquier nombre de usuario. |
+| `clave`   | VARCHAR(255) | Almacena contraseñas de forma segura (encriptadas). Se eligió VARCHAR(255) para tener espacio suficiente para almacenar contraseñas encriptadas con hash. |
 
-| Campo  | Tipo         | Justificación |
-|--------|-------------|---------------|
-| id     | INT AUTO_INCREMENT PRIMARY KEY | Identificador único de cada usuario |
-| usuario| VARCHAR(50)  | Permite almacenar nombres de usuario alfanuméricos |
-| clave  | VARCHAR(255) | Almacena la contraseña encriptada con SHA2 |
+#### **Tabla `datos`**
+| Campo    | Tipo        | Justificación |
+|----------|------------|---------------|
+| `id`     | INT AUTO_INCREMENT PRIMARY KEY | Identificador único de cada registro; permite diferenciar cada entrada y facilita las operaciones con la tabla. |
+| `nombre` | VARCHAR(100)| Almacena el nombre completo del cliente. VARCHAR permite variar la longitud del texto y 100 caracteres son suficientes para nombres largos. |
+| `edad`   | INT        | Almacena la edad como número entero, porque la edad es un valor numérico que no requiere decimales. |
+| `email`  | VARCHAR(100)| Almacena correos electrónicos. Se eligió VARCHAR porque los emails contienen letras, números y símbolos especiales, y 100 caracteres cubren la mayoría de los casos. |
 
-# Tabla `datos`
-
-| Campo   | Tipo        | Justificación |
-|---------|------------|---------------|
-| id      | INT AUTO_INCREMENT PRIMARY KEY | Identificador único de cada registro |
-| nombre  | VARCHAR(100)| Almacena el nombre del cliente |
-| edad    | INT        | Almacena la edad como número entero |
-| email   | VARCHAR(100)| Permite almacenar correos electrónicos con caracteres especiales (@, .) |
 
 > Los tipos de datos los elejí para garantizar que la información se almacene de manera segura y eficiente, y que cada campo tenga el tamaño adecuado según la información que contendrá.
 
