@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $user = "root";      
-$pass = "Pinktulip11$";          
+$pass = "";          
 $db   = "pasteleria_control";
 
 $conexion = new mysqli($host, $user, $pass, $db);
